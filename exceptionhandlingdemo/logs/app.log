@@ -1,0 +1,29 @@
+2019-05-13 10:05:09 DEBUG Flow:48 - View Open 
+2019-05-13 10:05:09 DEBUG Flow:40 - Logic Start 
+2019-05-13 10:05:09 DEBUG Flow:15 - Connection Open 
+2019-05-13 10:05:09 DEBUG Flow:35 - Connection Close 
+2019-05-13 10:05:09 ERROR Flow:59 - java.lang.NullPointerException
+2019-05-13 10:05:09 DEBUG Flow:64 - View Close 
+2019-05-13 10:14:24 DEBUG Flow:60 - View Open 
+2019-05-13 10:14:24 DEBUG Flow:52 - Logic Start 
+2019-05-13 10:14:24 DEBUG Flow:27 - Connection Open 
+2019-05-13 10:14:24 DEBUG Flow:47 - Connection Close 
+2019-05-13 10:14:24 ERROR Flow:75 - java.lang.NullPointerException
+	at exceptionhandlingdemo.Flow.db(ExceptionHandlingTools.java:30)
+	at exceptionhandlingdemo.Flow.logic(ExceptionHandlingTools.java:54)
+	at exceptionhandlingdemo.Flow.view(ExceptionHandlingTools.java:64)
+	at exceptionhandlingdemo.ExceptionHandlingTools.main(ExceptionHandlingTools.java:83)
+
+2019-05-13 10:14:24 DEBUG Flow:78 - View Close 
+2019-05-13 10:15:21 ERROR Flow:75 - java.lang.NullPointerException
+	at exceptionhandlingdemo.Flow.db(ExceptionHandlingTools.java:30)
+	at exceptionhandlingdemo.Flow.logic(ExceptionHandlingTools.java:54)
+	at exceptionhandlingdemo.Flow.view(ExceptionHandlingTools.java:64)
+	at exceptionhandlingdemo.ExceptionHandlingTools.main(ExceptionHandlingTools.java:83)
+
+2019-05-13 10:26:30 ERROR Flow:102 - java.lang.NullPointerException
+	at exceptionhandlingdemo.Flow.db(ExceptionHandlingTools.java:57)
+	at exceptionhandlingdemo.Flow.logic(ExceptionHandlingTools.java:81)
+	at exceptionhandlingdemo.Flow.view(ExceptionHandlingTools.java:91)
+	at exceptionhandlingdemo.ExceptionHandlingTools.main(ExceptionHandlingTools.java:112)
+
