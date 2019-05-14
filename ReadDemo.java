@@ -12,11 +12,17 @@ public class ReadDemo {
 		// String path = "c:\\workspace\\TPDDL-Java\\src\\A.java"
 		String path = "/Users/amit/Documents/TPDDL-Java/filehandlingdemo/src/filehandlingdemo/ReadDemo.java";
 		File file = new File(path);
+		final int EOF = -1;
 		if(file.exists()) {
 			FileInputStream fs = new FileInputStream(file);
-			byte b[] = fs.readAllBytes();
+			int singleByte = fs.read();
+			while(singleByte!=EOF) {
+				System.out.print((char)singleByte);
+				singleByte = fs.read();
+			}
+			/*byte b[] = fs.readAllBytes();  // Java 9 > 
 			String str = new String(b);
-			System.out.println(str);
+			System.out.println(str);*/
 			fs.close();
 			
 			
