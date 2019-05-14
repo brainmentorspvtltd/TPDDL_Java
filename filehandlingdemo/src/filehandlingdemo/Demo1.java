@@ -7,6 +7,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 
+
+
 /*class MyFilter implements FilenameFilter{
 
 	@Override
@@ -25,12 +27,20 @@ public class Demo1 {
 		
 		//List l = new ArrayList();
 		//String path = "⁨c:\\abcd\\xyz\\sample.txt";
-		String path = "c:\\";
-		File file = new File(path);
-		//file.mkdir();
+		String path = "/Users/⁨amit⁩/Documents⁩/testfile/a/b/c/d";
 		
+		File file = new File(path);
+		file.mkdirs();
+		System.out.println("Exist "+file.exists());
+		System.out.println(file.getAbsolutePath());
+		if(10>2) {
+		return ;
+		}
+		//file.mkdir();
+		//file.mkdirs(); // nested dir
+		File files [] = file.listFiles();
 		//File files [] = file.listFiles(new MyFilter());
-		File files[] = file.listFiles((dirPath, fileName)->fileName.endsWith(".txt"));
+		//File files[] = file.listFiles((dirPath, fileName)->fileName.endsWith(".txt"));
 		int dirCount = 0;
 		int fileCount = 0;
 		for(File f: files) {
